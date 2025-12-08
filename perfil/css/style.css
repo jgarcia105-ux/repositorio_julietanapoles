@@ -1,0 +1,117 @@
+:root {
+  --primary-blue: #1e3a8a;
+  --secondary-blue: #3b82f6;
+  --light-blue: #dbeafe;
+  --dark-blue: #0f172a;
+  --accent-blue: #06b6d4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.hero-section {
+  height: 700px;
+}
+
+.hero-left {
+  height: 700px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+  color: white;
+}
+
+.hero-right {
+  height: 700px;
+  background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--accent-blue) 100%);
+  color: white;
+}
+
+.logo-container {
+  width: 35%;
+  border: 3px solid var(--accent-blue);
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+}
+
+.profile-image {
+  width: 20%;
+  border: 3px solid var(--secondary-blue);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.work-section {
+  min-height: 800px;
+  background-color: var(--light-blue);
+}
+
+.resume-section {
+  min-height: 800px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  color: white;
+}
+
+.contact-info-section {
+  height: 700px;
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+  color: white;
+}
+
+.contact-form-section {
+  height: 700px;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--secondary-blue) 100%);
+  color: white;
+}
+
+.form-input {
+  width: 100%;
+  border: 2px solid var(--secondary-blue);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+button[type="submit"] {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: var(--accent-blue);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
+}
+
+@media screen and (max-width: 600px) {
+  .hero-section,
+  .hero-left,
+  .hero-right,
+  .contact-info-section,
+  .contact-form-section {
+    height: auto;
+  }
+}
+
+
+.work-section img {
+  width: 100%;
+  height: 300px;     
+  object-position: center;
+  border-radius: 5px;
+}

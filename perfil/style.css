@@ -1,0 +1,53 @@
+body {
+  max-width: 1300px;
+}
+
+.hero-section {
+  height: 700px;
+}
+
+.hero-left {
+  height: 700px;
+}
+
+.hero-right {
+  height: 700px;
+}
+
+.logo-container {
+  width: 35%;
+}
+
+.profile-image {
+  width: 20%;
+}
+
+.work-section {
+  min-height: 800px;
+}
+
+.resume-section {
+  min-height: 800px;
+}
+
+.contact-info-section {
+  height: 700px;
+}
+
+.contact-form-section {
+  height: 700px;
+}
+
+.form-input {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-section,
+  .hero-left,
+  .hero-right,
+  .contact-info-section,
+  .contact-form-section {
+    height: auto;
+  }
+}
